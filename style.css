@@ -1,0 +1,169 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Dark Gray for contrast */
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 200px;
+  opacity: 0.3;
+}
+
+header {
+  background-color: #f44336; /* Primary Color */
+  color: #fff; /* White for contrast */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+header input {
+  margin-top: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Pokédex styles */
+#pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Modified University Roman', 'Black';
+  color: #333;
+  justify-content: center;
+}
+
+/* Pokémon card styles */
+.pokemon-card {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-family: 'Modified University Roman', 'Black';
+  color: #333; /* Dark Gray for readability */
+}
+
+.pokemon-card img {
+  max-width: 100%;
+}
+
+.pokemon-card h3 {
+  color: inherit;
+}
+
+/* Hover effect */
+.pokemon-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Container for each Pokémon card */
+.pokemon-card-container {
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for each Pokémon card container */
+.pokemon-card-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Color-coding for Pokémon types */
+.normal { background-color: #F8F8FF; color: #333; } /* Baby Pink */
+.fire { background-color: #FFD1DC; color: #fff; } /* Light Coral */
+.water { background-color: #ADD8E6; color: #fff; } /* Light Blue */
+.electric { background-color: #F0FFF0; color: #333; } /* Mint Cream */
+.grass { background-color: #90EE90; color: #333; } /* Pale Green */
+.ice { background-color: #D3D3D3; color: #333; } /* Light Gray */
+.fighting { background-color: #FFDAB9; color: #fff; } /* Cornsilk */
+.poison { background-color: #F0FFFF; color: #000; } /* Azure */
+.ground { background-color: #F5F5DC; color: #333; } /* Beige */
+.flying { background-color: #87CEFA; color: #333; } /* Sky Blue */
+.psychic { background-color: #F0E68C; color: #333; } /* Khaki */
+.bug { background-color: #F0FFF0; color: #333; } /* Mint Cream */
+.rock { background-color: #D3D3D3; color: #333; } /* Light Gray */
+.ghost { background-color: #ADD8E6; color: #000; } /* Light Blue */
+.dragon { background-color: #87CEEB; color: #000; } /* Light Sky Blue */
+.dark { background-color: #708090; color: #fff; } /* Slate Gray */
+.steel { background-color: #D3D3D3; color: #333; } /* Light Gray */
+.fairy { background-color: #FFD1DC; color: #000; } /* Light Coral */
+
+
+.details-modal {
+  background-color: #fff; /* White for contrast */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;}
+
+.back-arrow {
+  color: #fff; /* White for contrast */
+  font-size: 24px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black for modal backdrop */
+}
+
+.modal-content {
+  background-color: #fefefe; /* Light Gray for modal content */
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  max-width: 400px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.pokemon-details-container {
+  background-color: #333; /* Dark Gray for details container */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa; /* Light Gray for close button */
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336; /* Primary Color for hover effect */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blur {
+  filter: blur(5px);
+}
